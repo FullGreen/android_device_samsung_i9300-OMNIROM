@@ -27,11 +27,11 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_i9300
+PRODUCT_NAME := omni_E210S
 PRODUCT_DEVICE := i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_MODEL := GT-I9300
+PRODUCT_MODEL := SHV-E210S
 
 # Override common i9300 properties to show properly i.e. in google services
 # This is required to solve some apps being incompatible with our device
