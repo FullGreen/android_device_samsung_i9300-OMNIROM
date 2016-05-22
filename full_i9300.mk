@@ -16,6 +16,9 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Get the long list of APNs
+PRODUCT_COPY_FILES := device/samsung/c1skt/configs/apns-full-conf.xml:system/etc/apns-conf.xml
+
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
